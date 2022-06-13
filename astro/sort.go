@@ -1,21 +1,21 @@
 package astro
 
-func BubbleSort(items []int) []int {
-	for i := 0; i < len(items); i++ {
-		for j := i + 1; j < len(items); j++ {
-			if items[j] < items[i] {
-				temp := items[j]
+//func BubbleSort(items []int) []int {
+//	for i := 0; i < len(items); i++ {
+//		for j := i + 1; j < len(items); j++ {
+//			if items[j] < items[i] {
+//				temp := items[j]
+//
+//				items[j] = items[i]
+//				items[i] = temp
+//			}
+//		}
+//	}
+//
+//	return items
+//}
 
-				items[j] = items[i]
-				items[i] = temp
-			}
-		}
-	}
-
-	return items
-}
-
-func MainSort(items []int32) []int32 {
+func Sort(items []int32) []int32 {
 	mapNumberExist := map[int32]struct {
 		exist bool
 		count int
